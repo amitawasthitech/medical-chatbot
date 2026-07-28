@@ -85,9 +85,6 @@ The chatbot follows a classic RAG architecture pattern:
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### Data Processing Pipeline
-
-![Architecture Diagram](Assets/architecture_mDCES71.jpg)
 
 ---
 
@@ -189,35 +186,6 @@ Once the application is running at `http://localhost:8080`:
 2. **Type your medical query** in the chat input box
 3. **Press Enter** or click Send
 4. **Receive AI-generated response** based on your knowledge base
-
-### Example Queries
-
-```
-- "What are the symptoms of diabetes?"
-- "How is hypertension treated?"
-- "Explain the causes of heart disease"
-```
-
-### Programmatic Usage
-
-```python
-from src.helper import download_hugging_face_embeddings
-from langchain_pinecone import PineconeVectorStore
-from langchain_openai import ChatOpenAI
-
-# Initialize components
-embeddings = download_hugging_face_embeddings()
-docsearch = PineconeVectorStore.from_existing_index(
-    index_name="medical-chatbot",
-    embedding=embeddings
-)
-
-# Query the system
-retriever = docsearch.as_retriever(search_type="similarity", search_kwargs={"k": 3})
-# Use retriever for custom implementations
-```
-
----
 
 ## 🔌 API Endpoints
 
