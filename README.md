@@ -31,20 +31,6 @@ The **End-to-End Medical Chatbot** is an intelligent conversational system desig
 
 ---
 
-## ✨ Features
-
-- 🤖 **Smart Q&A**: Context-aware medical question answering using RAG
-- 📚 **PDF Knowledge Base**: Automatic ingestion and processing of medical documents
-- ⚡ **Vector Search**: Efficient similarity search powered by Pinecone
-- 🧠 **Advanced LLM**: GPT-4o for high-quality natural language generation
-- 🎨 **User-Friendly Interface**: Intuitive web chat UI with real-time responses
-- 🔒 **Environment-Based Config**: Secure credential management via `.env`
-- 🐳 **Docker Support**: Containerized deployment for consistency
-- 🚀 **CI/CD Pipeline**: Automated deployment to AWS via GitHub Actions
-- 📝 **Comprehensive Docs**: Full documentation and architecture guides
-
----
-
 ## 🏗️ Architecture
 
 ### System Overview
