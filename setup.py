@@ -13,6 +13,7 @@ setup(
         "python-dotenv==1.1.0",
         "langchain-pinecone==0.2.8",
         "langchain-openai==0.3.24",
+        "langchain-groq==0.3.4",
         "langchain-community==0.3.26"
     ]
 )
